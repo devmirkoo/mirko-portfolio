@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/mirko-portfolio' : '',
+  basePath: isProd ? '/portfolio' : '',
   reactStrictMode: true,
 
   images: {
