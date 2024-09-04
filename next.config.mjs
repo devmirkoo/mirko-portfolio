@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  distDir: 'dist',
+  basePath: "/mirko-portfolio",
+  reactStrictMode: true,
+
   images: {
     unoptimized: true
   },
-
-  reactStrictMode: true,
-  
-  
 };
 
 export default nextConfig;
