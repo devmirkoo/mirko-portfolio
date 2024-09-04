@@ -13,17 +13,17 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL(DATA.metaData.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: DATA.metaData.title,
+    template: `%s | ${DATA.metaData.title}`,
   },
-  description: DATA.description,
+  description: DATA.metaData.description,
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    title: `${DATA.metaData.title}`,
+    description: DATA.metaData.description,
+    url: DATA.metaData.url,
+    siteName: `${DATA.metaData.siteName}`,
     locale: "en_US",
     type: "website",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${DATA.metaData.title}`,
     card: "summary_large_image",
   },
   verification: {
