@@ -125,7 +125,7 @@ export const DATA = {
       badges: [],
       location: "New York City, NY",
       title: "Delegatig Germany during the CWMUN New York 2024",
-      logoUrl: "/cwmun.png",
+      logoUrl: `${nextConfig.basePath}/cwmun.png`,
       start: "4 Apr 2024",
       end: "11 Apr 2024",
       description:
@@ -137,7 +137,7 @@ export const DATA = {
       school: "Università degli Studi di Messina",
       href: "https://unime.it",
       degree: "University Degree in Computer Technologies",
-      logoUrl: "/unime.png",
+      logoUrl: `${nextConfig.basePath}/unime.png`,
       start: "2024",
       end: "Now",
     },
@@ -145,7 +145,7 @@ export const DATA = {
       school: "IIS Verona-Trento",
       href: "https://veronatrento.it",
       degree: "High School Diploma",
-      logoUrl: "/vt.png",
+      logoUrl: `${nextConfig.basePath}/vt.png`,
       start: "2019",
       end: "2024",
     }
