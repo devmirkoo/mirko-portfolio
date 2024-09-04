@@ -1,7 +1,7 @@
 import {getAllPosts} from "@/data/blog"; // Assuming you have a function to get all posts
 
 export async function generateStaticParams() {
-  const posts = await getAllPosts("content, blog");
+  const posts = await getAllPosts("content");
 
   return posts.map((post) => ({
     slug: post.slug,
