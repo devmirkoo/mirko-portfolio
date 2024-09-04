@@ -1,9 +1,19 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon, BlocksIcon, UserIcon, SwordsIcon, Icon } from "lucide-react";
 import nextConfig from '../../next.config.mjs'
+// import { title } from "process";
+// import { url } from "inspector";
 
 export const DATA = {
-  name: "Mirko Fiorini",
+
+  metaData: {
+    title: 'Mirko | Italian Software Developer 🇮🇹',
+    description: 'Welcome to my personal website and portfolio, where I share my projects, blog posts, and more.',
+    url: 'https://jmiccodev.github.io/mirko-portfolio/',
+    siteName: 'Mirko\' portfolio',
+  },
+
+  name: "Mirko F.",
   initials: "MF",
   url: "https://github.com/jmiccoDev",
   location: "Sicily, Italy",
