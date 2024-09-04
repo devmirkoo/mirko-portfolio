@@ -6,6 +6,8 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
+import nextConfig from '../../../next.config.mjs'
+
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -54,7 +56,7 @@ export default function Page() {
                   <div className="md:flex-1 flex justify-center mt-4 md:mt-0">
                     <Image
                       className='w-full md:w-[350px] max-w-[350px] rounded-2xl border-2 border-white'
-                      src="/littleMe.png"
+                      src={`${nextConfig.basePath}/littleMe.png`}
                       alt="Born"
                       width={480}
                       height={360}
@@ -75,7 +77,7 @@ export default function Page() {
                   <div className="md:flex-1 flex justify-center md:pr-4">
                     <Image
                       className='w-full md:w-[350px] max-w-[350px] rounded-2xl border-2 border-white'
-                      src="/elementarySchool.png"
+                      src={`${nextConfig.basePath}/elementarySchool.png`}
                       alt="Discovery Computing"
                       width={480}
                       height={360}
@@ -106,7 +108,7 @@ export default function Page() {
                   <div className="md:flex-1 flex flex-col items-center py-0 md:py-4">
                     <Image
                       className='w-full md:w-[300px] max-w-[300px] rounded-2xl border-2 border-white'
-                      src="/codePhoto.png"
+                      src={`${nextConfig.basePath}/codePhoto.png`}
                       alt="Code"
                       width={1080}
                       height={1920}
@@ -133,7 +135,7 @@ export default function Page() {
                   <div className="w-[300px] h-[300px] overflow-hidden rounded-full border-2 border-white">
                     <Image
                       className="w-full h-full object-cover"
-                      src="/meNow.png"
+                      src={`${nextConfig.basePath}/meNow.png`}
                       alt="Present"
                       width={300}
                       height={300} // Altezza uguale alla larghezza per mantenere il formato quadrato

@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon, BlocksIcon, UserIcon, SwordsIcon, Icon } from "lucide-react";
+import nextConfig from '../../next.config.mjs'
 
 export const DATA = {
   name: "Mirko Fiorini",
@@ -31,7 +32,7 @@ export const DATA = {
     },
   },
 
-  avatarUrl: "/me.png",
+  avatarUrl: `${nextConfig.basePath}/me.png`,
   skills: [
     {
       name: "Typescript",
@@ -174,7 +175,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/websitePhotogallery.png",
+      image: `${nextConfig.basePath}/websitePhotogallery.png`,
       video:
         "",
     },
@@ -198,7 +199,7 @@ export const DATA = {
           icon: <Icons.game className="size-3" />,
         },
       ],
-      image: "/UltimateDuels.png",
+      image: `${nextConfig.basePath}/UltimateDuels.png`,
       video:
         "",
     },
@@ -224,7 +225,7 @@ export const DATA = {
           icon: <Icons.bot className="size-3" />,
         },
       ],
-      image: "/botWorking.png",
+      image: `${nextConfig.basePath}/botWorking.png`,
       video:
         "",
     }
