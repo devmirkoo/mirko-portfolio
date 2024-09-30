@@ -15,7 +15,7 @@ export const DATA = {
 
   name: "Mirko F.",
   initials: "MF",
-  url: "https://github.com/jmiccoDev",
+  url: "https://mirko.social",
   location: "Sicily, Italy",
   locationLink: "https://www.google.com/maps/place/italy",
   description:
@@ -89,41 +89,15 @@ export const DATA = {
   ],
   contact: {
     email: "hello@example.com",
-    tel: "+123456789",
+    tel: "+39 123 456 7890",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/jmiccoDev",
-        icon: Icons.github,
+      "Socials Page": {
+        name: "Socials Page",
+        url: "https://mirko.social",
+        icon: Icons.link,
 
         navbar: true,
-      },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "",
-        icon: Icons.linkedin,
-
-        navbar: false,
-      },
-      X: {
-        name: "X",
-        url: "",
-        icon: Icons.x,
-
-        navbar: false,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "",
-        icon: Icons.youtube,
-        navbar: false,
-      },
-      email: {
-        name: "Send Email",
-        url: "#",
-        icon: Icons.email,
-
-        navbar: false,
+        blank: true,
       },
     },
   },
