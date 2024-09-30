@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { Skeleton } from "./ui/skeleton";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
@@ -71,6 +72,7 @@ export function ProjectCard({
             height={300}
             className="h-40 w-full overflow-hidden object-cover object-top"
           />
+          
         )}
       </Link>
       <CardHeader className="px-2">
