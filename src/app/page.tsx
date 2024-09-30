@@ -4,6 +4,7 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Skeleton } from "@/components/ui/skeleton"
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
@@ -33,6 +34,7 @@ export default function Page() {
               </div>
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <Avatar className="size-28 border stroke-2 stroke-black">
+                  <Skeleton className="size-28 border stroke-2 stroke-black" />
                   <AvatarImage className="scale-125 bg-white" alt={DATA.name} src={DATA.avatarUrl} />
                   <AvatarFallback>{DATA.initials}</AvatarFallback>
                 </Avatar>
@@ -214,7 +216,7 @@ export default function Page() {
                 <p className="mx-auto max-w-[600px] text-balance text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Do you want chat with me? Just shoot me a dm to my different socials.{" "}
                   <Link
-                    href='#'
+                    href={DATA.url}
                     className="text-blue-500 hover:underline"
                   >
                     Click here to get redeirected to my socials list.

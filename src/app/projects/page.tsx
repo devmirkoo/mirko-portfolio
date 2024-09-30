@@ -71,7 +71,7 @@ export default function Page() {
                 <p className="mx-auto max-w-[600px] text-balance text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I&apos;m always open to new opportunities and collaborations. I am available to work on commission for select projects.
                   {" "}<Link
-                    href='#'
+                    href={DATA.url}
                     className="text-blue-500 hover:underline"
                   >
                     Click here to get redirected to my socials list.

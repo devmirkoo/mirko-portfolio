@@ -158,7 +158,7 @@ export default function Page() {
               <p className="mx-auto max-w-[600px] text-balance text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Thank you for viewing the About page. If you want to get to know me or talk to me, please look at the list of my socials.{" "}
                 <Link
-                  href='#'
+                  href={DATA.url}
                   className="text-blue-500 hover:underline"
                 >
                   Click here to get redirected to my socials list.
