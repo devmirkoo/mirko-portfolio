@@ -202,14 +202,14 @@ export default function Page() {
                 Thank You ❤️
               </h2>
               <p className="mx-auto max-w-[600px] text-balance text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                <TypeEffect text="Thank you for viewing the About page. If you want to get to know me or talk to me, please look at the list of my socials. " />
+                Thank you for viewing the About page. If you want to get to know me or talk to me, please look at the list of my socials.{" "}
                 <Link
                   href={DATA.url}
                   className="text-blue-500 hover:underline"
                 >
                   Click here to get redirected to my socials list.
-                </Link>{" "}<br />
-                <TypeEffect text="I'll respond whenever I can. I will ignore all soliciting." />
+                </Link>{" "}<br /> 
+              I&apos;ll respond whenever I can. I will ignore all soliciting.
               </p>
             </div>
           </BlurFade>
